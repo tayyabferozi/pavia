@@ -51,14 +51,57 @@
       overflow-y: auto;
     }
 
+    .menu {
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        position: fixed;
+        top: 106px;
+        left: 20px;
+        width: 56px;
+        height: 56px;
+        background-color: $color3;
+        border-radius: 50%;
+
+        svg {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 24px;
+        }
+      }
+    }
+
     .sidebar {
       width: 20vw;
       min-width: 320px;
       flex-shrink: 0;
       background-color: $color7;
 
+      @include transitioned;
+
       * {
         color: #fff;
+      }
+
+      @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 90px;
+        left: -320px;
+
+        &.open {
+          left: 0;
+        }
+      }
+
+      .close {
+        position: absolute;
+        padding: 14px 12px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
       }
 
       .tabs-head {
