@@ -1,0 +1,19 @@
+.custom-form-control {
+  input {
+    background-color: $color4;
+    border: none;
+    border-radius: 0.5rem;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+
+    &:hover {
+      background-color: $color2;
+    }
+  }
+}
+
+input {
+  outline: none;
+}

@@ -1,0 +1,53 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+
+  .btn-text {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &.btn-primary {
+    background-color: $color5;
+
+    &:hover {
+      background-color: $color6;
+    }
+
+    .btn-text {
+      color: #fff;
+    }
+  }
+
+  &.btn-dark {
+    background-color: $color3;
+
+    &:hover {
+      background-color: $color4;
+    }
+
+    .btn-text {
+      color: #fff;
+    }
+  }
+
+  &.btn-light-grey {
+    background-color: $color4;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: $color2;
+    }
+
+    .btn-text {
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+}
