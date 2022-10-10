@@ -29,7 +29,19 @@
       padding: 0 0 0 21px;
 
       .logo {
-        width: 98px;
+        // width: 98px;
+        font-weight: bold;
+        color: $color5;
+        font-size: 32px;
+        line-height: 1;
+
+        @media screen and (max-width: 575px) {
+          font-size: 26px;
+        }
+
+        @media screen and (max-width: 450px) {
+          font-size: 16px;
+        }
       }
 
       .btns {
@@ -102,6 +114,10 @@
         right: 0;
         top: 0;
         cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+          display: none;
+        }
       }
 
       .tabs-head {

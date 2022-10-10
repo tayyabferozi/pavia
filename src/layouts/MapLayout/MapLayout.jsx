@@ -16,7 +16,8 @@ const MapLayout = () => {
         </div>
         <div className="header">
           <div>
-            <img className="logo" src="/assets/imgs/logo.png" alt="logo" />
+            {/* <img className="logo" src="/assets/imgs/logo.png" alt="logo" /> */}
+            <div className="logo">Metaverse Land</div>
           </div>
           <div className="btns">
             <Button dark>Sign up</Button>
