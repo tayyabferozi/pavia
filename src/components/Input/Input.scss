@@ -11,6 +11,11 @@
     &:hover {
       background-color: $color2;
     }
+
+    &::placeholder {
+      color: #fff;
+      opacity: 0.1;
+    }
   }
 }
 
